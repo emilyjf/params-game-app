@@ -1,0 +1,8 @@
+<%= form_tag "/form_guess_send", method: :post do %>
+  <input type="text" name="guess">
+  <input type="submit" value="Make a guess">
+<% end %>
+
+<h1>Your guess of <%= @guess %> was <%= @guess_message %> </h1>
+
+<% end %>
